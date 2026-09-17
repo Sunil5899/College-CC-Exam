@@ -378,7 +378,7 @@ button:hover{
 
 <div class="card">
 <button type="button" onclick="submitExam()">
-  ✅ परीक्षा Submit करें
+  ✅ Submit Exam
 </button>
 </div>
 
@@ -389,7 +389,7 @@ button:hover{
 
 <div class="card" id="result">
 
-<h2>🎉 परीक्षा परिणाम</h2>
+<h2>🎉 Test result</h2>
 
 <p id="studentName"></p>
 
@@ -402,7 +402,7 @@ button:hover{
 <br>
 
 <button onclick="location.reload()">
-  फिर से शुरू करें
+  Start over
 </button>
 
 </div>
@@ -426,12 +426,12 @@ function startExam(){
     document.getElementById("mobile").value.trim();
 
   if(name === ""){
-    alert("कृपया अपना नाम दर्ज करें");
+    alert("Please enter your name");
     return;
   }
 
   if(!/^[0-9]{10}$/.test(mobile)){
-    alert("कृपया सही 10 अंकों का मोबाइल नंबर दर्ज करें");
+    alert("Please enter a valid 10-digit mobile number.");
     return;
   }
 
@@ -466,14 +466,14 @@ function submitExam(){
     (correct / total) * 100;
 
 
-  /* पहले Result दिखाएँ */
+  /* Show results first */
 
   document.getElementById("exam").style.display="none";
 
   document.getElementById("result").style.display="block";
 
   document.getElementById("studentName").innerHTML =
-    "विद्यार्थी: <b>" +
+    "student: <b>" +
     document.getElementById("name").value +
     "</b>";
 
@@ -481,19 +481,19 @@ function submitExam(){
     correct + " / " + total;
 
   document.getElementById("detailsResult").innerHTML =
-    "सही उत्तर: " + correct +
-    "<br>गलत उत्तर: " + wrong +
-    "<br>प्रतिशत: " + percentage + "%";
+    "Correct answer: " + correct +
+    "<br>Incorrect answer: " + wrong +
+    "<br>Percentage: " + percentage + "%";
 
   if(percentage >= 40){
 
     document.getElementById("status").innerHTML =
-      "✅ उत्तीर्ण";
+      "✅ pass";
 
   }else{
 
     document.getElementById("status").innerHTML =
-      "❌ अनुत्तीर्ण";
+      "❌ failed";
   }
 
 
