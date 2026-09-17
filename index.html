@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>General Knowledge Exam 2026</title>
+
+<style>
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f2f4f7;
+  color:#222;
+}
+
+.container{
+  max-width:650px;
+  margin:auto;
+  padding:15px;
+}
+
+.header{
+  background:#ffffff;
+  padding:22px;
+  text-align:center;
+  border-radius:12px;
+  margin-bottom:15px;
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.header h1{
+  margin:0 0 8px;
+  font-size:25px;
+}
+
+.fee{
+  display:inline-block;
+  background:#e8f5e9;
+  padding:7px 15px;
+  border-radius:20px;
+  font-weight:bold;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  margin-bottom:15px;
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+label{
+  font-weight:bold;
+  display:block;
+  margin-bottom:6px;
+}
+
+input{
+  width:100%;
+  padding:12px;
+  border:1px solid #ccc;
+  border-radius:7px;
+  margin-bottom:15px;
+  font-size:16px;
+}
+
+.question{
+  font-size:17px;
+  font-weight:bold;
+  margin-bottom:12px;
+}
+
+.option{
+  display:block;
+  background:#f7f7f7;
+  padding:11px;
+  margin:8px 0;
+  border-radius:7px;
+  cursor:pointer;
+}
+
+.option:hover{
+  background:#eeeeee;
+}
+
+.option input{
+  width:auto;
+  margin:0 8px 0 0;
+}
+
+button{
+  width:100%;
+  padding:14px;
+  border:0;
+  border-radius:8px;
+  background:#1976d2;
+  color:white;
+  font-size:17px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#125ca8;
+}
+
+#exam{
+  display:none;
+}
+
+#result{
+  display:none;
+  text-align:center;
+}
+
+.score{
+  font-size:35px;
+  font-weight:bold;
+  margin:15px 0;
+}
+
+.pass{
+  font-size:20px;
+  font-weight:bold;
+}
+
+.small{
+  color:#666;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <h1>📝 General Knowledge Exam 2026</h1>
+    <div class="fee">परीक्षा शुल्क: ₹10</div>
+    <p class="small">Online General Knowledge Examination</p>
+  </div>
+
+
+  <!-- STUDENT DETAILS -->
+
+  <div class="card" id="details">
+
+    <label>विद्यार्थी का नाम</label>
+    <input type="text" id="name" placeholder="अपना नाम लिखें">
+
+    <label>मोबाइल नंबर</label>
+    <input type="tel" id="mobile" maxlength="10"
+           placeholder="10 अंकों का मोबाइल नंबर">
+
+    <button onclick="startExam()">
+      परीक्षा शुरू करें
+    </button>
+
+  </div>
+
+
+  <!-- EXAM -->
+
+  <form id="exam">
+
+    <div class="card">
+
+      <div class="question">
+        1. भारत की राजधानी क्या है?
+      </div>
+
+      <label class="option">
+        <input type="radio" name="q1" value="0">
+        मुंबई
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q1" value="1">
+        नई दिल्ली
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q1" value="0">
+        भोपाल
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q1" value="0">
+        जयपुर
+      </label>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="question">
+        2. भारत का राष्ट्रीय पशु कौन है?
+      </div>
+
+      <label class="option">
+        <input type="radio" name="q2" value="1">
+        बाघ
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q2" value="0">
+        शेर
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q2" value="0">
+        हाथी
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q2" value="0">
+        हिरण
+      </label>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="question">
+        3. भारत का राष्ट्रीय फूल कौन सा है?
+      </div>
+
+      <label class="option">
+        <input type="radio" name="q3" value="1">
+        कमल
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q3" value="0">
+        गुलाब
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q3" value="0">
+        गेंदा
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q3" value="0">
+        चमेली
+      </label>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="question">
+        4. भारत का राष्ट्रीय खेल परंपरागत रूप से किसे माना जाता है?
+      </div>
+
+      <label class="option">
+        <input type="radio" name="q4" value="1">
+        हॉकी
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q4" value="0">
+        क्रिकेट
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q4" value="0">
+        फुटबॉल
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q4" value="0">
+        कबड्डी
+      </label>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="question">
+        5. भारत का संविधान कब लागू हुआ?
+      </div>
+
+      <label class="option">
+        <input type="radio" name="q5" value="1">
+        26 जनवरी 1950
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q5" value="0">
+        15 अगस्त 1947
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q5" value="0">
+        26 नवंबर 1949
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q5" value="0">
+        2 अक्टूबर 1950
+      </label>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="question">
+        6. भारत का राष्ट्रीय पक्षी कौन है?
+      </div>
+
+      <label class="option">
+        <input type="radio" name="q6" value="1">
+        मोर
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q6" value="0">
+        तोता
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q6" value="0">
+        कबूतर
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q6" value="0">
+        हंस
+      </label>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="question">
+        7. सूर्य के सबसे निकट कौन सा ग्रह है?
+      </div>
+
+      <label class="option">
+        <input type="radio" name="q7" value="1">
+        बुध
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q7" value="0">
+        शुक्र
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q7" value="0">
+        पृथ्वी
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q7" value="0">
+        मंगल
+      </label>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="question">
+        8. भारत में स्वतंत्रता दिवस कब मनाया जाता है?
+      </div>
+
+      <label class="option">
+        <input type="radio" name="q8" value="1">
+        15 अगस्त
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q8" value="0">
+        26 जनवरी
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q8" value="0">
+        2 अक्टूबर
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q8" value="0">
+        14 नवंबर
+      </label>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="question">
+        9. भारत के राष्ट्रपिता के रूप में किसे जाना जाता है?
+      </div>
+
+      <label class="option">
+        <input type="radio" name="q9" value="1">
+        महात्मा गांधी
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q9" value="0">
+        जवाहरलाल नेहरू
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q9" value="0">
+        सरदार पटेल
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q9" value="0">
+        डॉ. राजेंद्र प्रसाद
+      </label>
+
+    </div>
+
+
+    <div class="card">
+
+      <div class="question">
+        10. भारत का राष्ट्रीय वृक्ष कौन सा है?
+      </div>
+
+      <label class="option">
+        <input type="radio" name="q10" value="1">
+        बरगद
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q10" value="0">
+        नीम
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q10" value="0">
+        पीपल
+      </label>
+
+      <label class="option">
+        <input type="radio" name="q10" value="0">
+        आम
+      </label>
+
+    </div>
+
+
+    <div class="card">
+      <button type="button" onclick="submitExam()">
+        ✅ परीक्षा Submit करें
+      </button>
+    </div>
+
+  </form>
+
+
+  <!-- RESULT -->
+
+  <div class="card" id="result">
+
+    <h2>🎉 परीक्षा परिणाम</h2>
+
+    <p id="studentName"></p>
+
+    <div class="score" id="score"></div>
+
+    <p id="detailsResult"></p>
+
+    <div class="pass" id="status"></div>
+
+    <br>
+
+    <button onclick="location.reload()">
+      फिर से शुरू करें
+    </button>
+
+  </div>
+
+</div>
+
+
+<script>
+
+function startExam(){
+
+  let name = document.getElementById("name").value.trim();
+  let mobile = document.getElementById("mobile").value.trim();
+
+  if(name === ""){
+    alert("कृपया अपना नाम दर्ज करें");
+    return;
+  }
+
+  if(!/^[0-9]{10}$/.test(mobile)){
+    alert("कृपया सही 10 अंकों का मोबाइल नंबर दर्ज करें");
+    return;
+  }
+
+  document.getElementById("details").style.display="none";
+  document.getElementById("exam").style.display="block";
+
+  window.scrollTo(0,0);
+}
+
+
+function submitExam(){
+
+  let total = 10;
+  let correct = 0;
+
+  for(let i=1; i<=10; i++){
+
+    let answer = document.querySelector(
+      'input[name="q'+i+'"]:checked'
+    );
+
+    if(answer && answer.value === "1"){
+      correct++;
+    }
+  }
+
+  let wrong = total - correct;
+  let percentage = (correct / total) * 100;
+
+  document.getElementById("exam").style.display="none";
+  document.getElementById("result").style.display="block";
+
+  document.getElementById("studentName").innerHTML =
+    "विद्यार्थी: <b>" +
+    document.getElementById("name").value +
+    "</b>";
+
+  document.getElementById("score").innerHTML =
+    correct + " / " + total;
+
+  document.getElementById("detailsResult").innerHTML =
+    "सही उत्तर: " + correct +
+    "<br>गलत उत्तर: " + wrong +
+    "<br>प्रतिशत: " + percentage + "%";
+
+  if(percentage >= 40){
+
+    document.getElementById("status").innerHTML =
+      "✅ उत्तीर्ण";
+
+  }else{
+
+    document.getElementById("status").innerHTML =
+      "❌ अनुत्तीर्ण";
+
+  }
+
+  window.scrollTo(0,0);
+}
+
+</script>
+
+</body>
+</html>
