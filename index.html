@@ -4,160 +4,186 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>CC Examination - Government Arts & Commerce College Rau, Indore</title>
+<title>CCE Test | B.Com Second Year</title>
 
 <style>
 *{
-  box-sizing:border-box;
+    box-sizing:border-box;
 }
 
 body{
-  margin:0;
-  font-family:Arial, sans-serif;
-  background:#f1f4f8;
-  color:#222;
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#e0f2fe,#f8fafc,#dbeafe);
+    color:#1e293b;
 }
 
 .container{
-  max-width:700px;
-  margin:auto;
-  padding:15px;
+    max-width:850px;
+    margin:25px auto;
+    padding:15px;
 }
 
 .header{
-  background:white;
-  text-align:center;
-  padding:25px 15px;
-  border-radius:12px;
-  margin-bottom:15px;
-  box-shadow:0 2px 10px rgba(0,0,0,.10);
+    background:linear-gradient(135deg,#0f172a,#1d4ed8,#2563eb);
+    color:white;
+    padding:28px 20px;
+    border-radius:20px;
+    text-align:center;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.25),
+        inset 0 2px 3px rgba(255,255,255,.25);
 }
 
 .header h1{
-  margin:0 0 8px;
-  font-size:24px;
+    margin:0;
+    font-size:28px;
+    letter-spacing:.5px;
 }
 
 .header h2{
-  margin:5px 0;
-  font-size:20px;
+    margin:8px 0;
+    font-size:22px;
 }
 
 .header p{
-  margin:8px 0 0;
-  color:#555;
+    margin:5px 0;
+}
+
+.teacher{
+    margin-top:15px;
+    padding:12px;
+    background:rgba(255,255,255,.13);
+    border-radius:12px;
+}
+
+.teacher strong{
+    font-size:18px;
 }
 
 .card{
-  background:white;
-  padding:20px;
-  border-radius:12px;
-  margin-bottom:15px;
-  box-shadow:0 2px 10px rgba(0,0,0,.08);
+    background:white;
+    margin-top:20px;
+    padding:22px;
+    border-radius:18px;
+
+    box-shadow:
+        0 8px 25px rgba(15,23,42,.12),
+        0 2px 5px rgba(0,0,0,.08);
 }
 
-label.title{
-  display:block;
-  font-weight:bold;
-  margin-bottom:7px;
+.card h3{
+    margin-top:0;
+    color:#1d4ed8;
 }
 
-input[type="text"],
-input[type="tel"]{
-  width:100%;
-  padding:12px;
-  font-size:16px;
-  border:1px solid #ccc;
-  border-radius:7px;
-  margin-bottom:15px;
+label{
+    display:block;
+    font-weight:bold;
+    margin-top:14px;
+    margin-bottom:6px;
 }
 
-.subject-btn{
-  width:100%;
-  padding:16px;
-  margin:8px 0;
-  border:0;
-  border-radius:8px;
-  color:white;
-  font-size:17px;
-  font-weight:bold;
-  cursor:pointer;
+input,select{
+    width:100%;
+    padding:12px;
+    border:1px solid #cbd5e1;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
 }
 
-.economics{
-  background:#1976d2;
+input:focus,select:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,.12);
 }
 
-.accounting{
-  background:#388e3c;
-}
-
-.start{
-  background:#7b1fa2;
-}
-
-.submit{
-  background:#d32f2f;
-}
-
-.subject-btn:hover{
-  opacity:.9;
+.subject-info{
+    background:linear-gradient(135deg,#eff6ff,#dbeafe);
+    border-left:5px solid #2563eb;
+    padding:15px;
+    border-radius:12px;
+    margin-bottom:20px;
 }
 
 .question{
-  font-size:17px;
-  font-weight:bold;
-  line-height:1.5;
-  margin-bottom:12px;
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+    padding:17px;
+    margin:15px 0;
+    border-radius:14px;
+}
+
+.question-title{
+    font-weight:bold;
+    margin-bottom:12px;
+    line-height:1.5;
 }
 
 .option{
-  display:block;
-  background:#f7f7f7;
-  padding:11px;
-  margin:8px 0;
-  border-radius:7px;
-  cursor:pointer;
-  font-weight:normal;
+    display:block;
+    padding:10px;
+    margin:7px 0;
+    background:white;
+    border:1px solid #e2e8f0;
+    border-radius:9px;
+    cursor:pointer;
+    font-weight:normal;
 }
 
 .option:hover{
-  background:#eeeeee;
+    background:#eff6ff;
 }
 
 .option input{
-  margin-right:8px;
+    width:auto;
+    margin-right:8px;
 }
 
-.subject-heading{
-  text-align:center;
-  font-size:22px;
-  margin:5px 0 15px;
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(135deg,#1d4ed8,#2563eb);
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+
+    box-shadow:
+        0 7px 15px rgba(37,99,235,.3);
 }
 
-.info{
-  text-align:center;
-  background:#fff8e1;
-  padding:10px;
-  border-radius:7px;
-  margin-bottom:15px;
+button:hover{
+    transform:translateY(-1px);
 }
 
 .success{
-  text-align:center;
+    display:none;
+    text-align:center;
+    background:#ecfdf5;
+    border:2px solid #22c55e;
+    color:#166534;
+    padding:25px;
+    margin-top:20px;
+    border-radius:15px;
 }
 
-.success h2{
-  color:#2e7d32;
+.footer{
+    text-align:center;
+    margin:20px 0;
+    color:#64748b;
+    font-size:14px;
 }
 
-.small{
-  color:#666;
-  font-size:14px;
+.required{
+    color:red;
 }
 
 .hidden{
-  display:none;
+    display:none;
 }
 </style>
 </head>
@@ -169,1099 +195,807 @@ input[type="tel"]{
 <!-- HEADER -->
 
 <div class="header">
-  <h1>Government Arts & Commerce College Rau, Indore</h1>
-  <h2>CC Examination</h2>
-  <p><b>B.Com Second Year</b></p>
+
+<h1>Government Arts & Commerce College, Rau, Indore</h1>
+
+<h2>CCE TEST</h2>
+
+<p>Continuous and Comprehensive Evaluation</p>
+
+<p><strong>B.Com Second Year</strong></p>
+
+<div class="teacher">
+    Conducted by<br>
+    <strong>Dr. Neha Chouhan</strong><br>
+    Assistant Professor
 </div>
-
-
-<!-- STUDENT DETAILS -->
-
-<div class="card" id="studentDetails">
-
-  <label class="title">Student Name</label>
-
-  <input type="text"
-         id="studentName"
-         placeholder="Enter your full name">
-
-
-  <label class="title">Mobile Number</label>
-
-  <input type="tel"
-         id="mobile"
-         maxlength="10"
-         inputmode="numeric"
-         placeholder="Enter 10 digit mobile number">
-
-
-  <button class="subject-btn start"
-          onclick="showSubjects()">
-    Continue
-  </button>
 
 </div>
 
 
-<!-- SUBJECT SELECTION -->
+<!-- REGISTRATION -->
 
-<div class="card hidden" id="subjectSelection">
+<div class="card" id="registration">
 
-  <h2 class="subject-heading">
-    Select Your Subject
-  </h2>
+<h3>Student Registration</h3>
 
-  <button class="subject-btn economics"
-          onclick="startExam('Business Economics')">
-    📘 Business Economics
-    <br>
-    <span style="font-size:14px;">
-      12 Questions × 2 Marks = 24 Marks
-    </span>
-  </button>
+<label>
+Student Name <span class="required">*</span>
+</label>
+
+<input type="text" id="name" placeholder="Enter Student Name">
 
 
-  <button class="subject-btn accounting"
-          onclick="startExam('Corporate Accounting')">
-    📗 Corporate Accounting
-    <br>
-    <span style="font-size:14px;">
-      12 Questions × 2 Marks = 24 Marks
-    </span>
-  </button>
+<label>
+Mobile Number <span class="required">*</span>
+</label>
+
+<input type="tel" id="mobile" maxlength="10" placeholder="Enter Mobile Number">
+
+
+<label>
+Caste / Category <span class="required">*</span>
+</label>
+
+<select id="caste">
+<option value="">Select Category</option>
+<option>SC</option>
+<option>ST</option>
+<option>OBC</option>
+<option>GEN</option>
+<option>Other</option>
+</select>
+
+
+<label>
+College Name <span class="required">*</span>
+</label>
+
+<input type="text" id="college" placeholder="Enter College Name">
+
+
+<label>
+Class <span class="required">*</span>
+</label>
+
+<input type="text" id="className" value="B.Com Second Year">
+
+
+<label>
+Subject <span class="required">*</span>
+</label>
+
+<select id="subject">
+<option value="">Select Subject</option>
+<option value="Business Economics">Business Economics</option>
+<option value="Corporate Accounting">Corporate Accounting</option>
+</select>
+
+
+<label>
+Exam Date <span class="required">*</span>
+</label>
+
+<input type="date" id="examDate">
+
+
+<br><br>
+
+<button onclick="startTest()">Start CCE Test</button>
 
 </div>
 
 
 <!-- EXAM -->
 
-<div id="examSection" class="hidden">
+<div class="card hidden" id="exam">
 
-  <div class="card">
-    <h2 class="subject-heading" id="subjectTitle"></h2>
+<div class="subject-info">
 
-    <div class="info">
-      <b>Total Questions:</b> 12
-      &nbsp; | &nbsp;
-      <b>Total Marks:</b> 24
-      <br>
-      <span class="small">
-        Each question carries 2 marks.
-      </span>
-    </div>
-  </div>
+<h3 id="subjectTitle"></h3>
 
+<p><strong>Total Questions:</strong> 15</p>
 
-  <form id="examForm">
+<p><strong>Marks per Question:</strong> 2</p>
 
+<p><strong>Total Marks:</strong> 30</p>
 
-  <!-- BUSINESS ECONOMICS -->
-
-  <div id="economicsQuestions">
-
-
-  <div class="card">
-    <div class="question">
-      1. What does the law of demand describe?
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q1" value="0">
-      A) Direct relationship between price and demand
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q1" value="1">
-      B) Inverse relationship between price and demand
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q1" value="0">
-      C) Relationship between income and supply
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q1" value="0">
-      D) Relationship between cost and profit
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      2. Which of the following is a method of measuring price elasticity of demand?
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q2" value="1">
-      A) Percentage method
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q2" value="0">
-      B) Production method
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q2" value="0">
-      C) Cost method
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q2" value="0">
-      D) Profit method
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      3. Market equilibrium occurs when:
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q3" value="0">
-      A) Demand is greater than supply
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q3" value="0">
-      B) Supply is greater than demand
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q3" value="1">
-      C) Demand equals supply
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q3" value="0">
-      D) Price becomes zero
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      4. Kautilya's Arthashastra provides insights into:
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q4" value="1">
-      A) Market demand and pricing
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q4" value="0">
-      B) International trade only
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q4" value="0">
-      C) Modern banking only
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q4" value="0">
-      D) Industrial production only
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      5. Who developed the concept of utility in consumer behaviour?
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q5" value="0">
-      A) Adam Smith
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q5" value="1">
-      B) Alfred Marshall
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q5" value="0">
-      C) David Ricardo
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q5" value="0">
-      D) Kautilya
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      6. An indifference curve represents combinations of two goods that provide:
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q6" value="0">
-      A) Different levels of income
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q6" value="1">
-      B) Equal level of satisfaction
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q6" value="0">
-      C) Equal levels of production
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q6" value="0">
-      D) Different prices
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      7. ICC stands for:
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q7" value="1">
-      A) Income Consumption Curve
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q7" value="0">
-      B) Internal Cost Curve
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q7" value="0">
-      C) Income Cost Curve
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q7" value="0">
-      D) Individual Consumption Cost
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      8. Which of the following is a type of good mentioned in the syllabus?
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q8" value="1">
-      A) Normal good
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q8" value="0">
-      B) Capital good only
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q8" value="0">
-      C) Public good only
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q8" value="0">
-      D) Luxury service only
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      9. Which of the following is a production function concept?
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q9" value="1">
-      A) TP, AP and MP
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q9" value="0">
-      B) GDP and GNP
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q9" value="0">
-      C) CPI and WPI
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q9" value="0">
-      D) M1 and M2
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      10. The Law of Variable Proportions is related to:
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q10" value="1">
-      A) Production
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q10" value="0">
-      B) Consumption
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q10" value="0">
-      C) Banking
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q10" value="0">
-      D) International trade
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      11. LAC stands for:
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q11" value="0">
-      A) Long Average Cost
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q11" value="1">
-      B) Long-run Average Cost
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q11" value="0">
-      C) Labour Average Cost
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q11" value="0">
-      D) Long-run Actual Cost
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      12. Which of the following is associated with economies and diseconomies?
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q12" value="1">
-      A) Returns to scale
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q12" value="0">
-      B) Demand curve
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q12" value="0">
-      C) Indifference curve
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q12" value="0">
-      D) Budget line
-    </label>
-  </div>
-
-  </div>
-
-
-  <!-- CORPORATE ACCOUNTING -->
-
-  <div id="accountingQuestions" class="hidden">
-
-
-  <div class="card">
-    <div class="question">
-      1. What is IPO?
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q1" value="1">
-      A) Initial Public Offering
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q1" value="0">
-      B) Internal Public Offering
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q1" value="0">
-      C) Indian Public Organisation
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q1" value="0">
-      D) Initial Private Organisation
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      2. Which of the following is related to shareholders?
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q2" value="1">
-      A) Bonus Shares
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q2" value="0">
-      B) Cash Book
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q2" value="0">
-      C) Trial Balance
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q2" value="0">
-      D) Journal Entry
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      3. What is meant by buy-back of shares?
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q3" value="1">
-      A) Company purchases its own shares
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q3" value="0">
-      B) Company issues new shares
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q3" value="0">
-      C) Shareholders purchase debentures
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q3" value="0">
-      D) Company sells its assets
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      4. CSR stands for:
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q4" value="1">
-      A) Corporate Social Responsibility
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q4" value="0">
-      B) Company Social Report
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q4" value="0">
-      C) Corporate Share Return
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q4" value="0">
-      D) Company Service Responsibility
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      5. Which of the following is a financial statement?
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q5" value="1">
-      A) Balance Sheet
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q5" value="0">
-      B) Purchase Order
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q5" value="0">
-      C) Cash Memo
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q5" value="0">
-      D) Voucher
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      6. EPS stands for:
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q6" value="1">
-      A) Earnings Per Share
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q6" value="0">
-      B) Equity Per Share
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q6" value="0">
-      C) Earnings Profit Statement
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q6" value="0">
-      D) Equity Profit Share
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      7. AS-20 mainly deals with:
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q7" value="1">
-      A) Earnings Per Share
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q7" value="0">
-      B) Cash Flow Statement
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q7" value="0">
-      C) Inventory Valuation
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q7" value="0">
-      D) Depreciation
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      8. Which statement shows the financial position of a company?
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q8" value="1">
-      A) Balance Sheet
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q8" value="0">
-      B) Cash Book
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q8" value="0">
-      C) Sales Book
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q8" value="0">
-      D) Purchase Book
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      9. Goodwill is an example of:
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q9" value="1">
-      A) Intangible Asset
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q9" value="0">
-      B) Current Liability
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q9" value="0">
-      C) Fixed Liability
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q9" value="0">
-      D) Tangible Asset
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      10. EVA stands for:
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q10" value="1">
-      A) Economic Value Added
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q10" value="0">
-      B) Equity Value Account
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q10" value="0">
-      C) Economic Valuation Account
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q10" value="0">
-      D) Enterprise Value Analysis
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      11. Which of the following is related to valuation of intangible assets?
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q11" value="1">
-      A) Goodwill
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q11" value="0">
-      B) Cash
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q11" value="0">
-      C) Inventory
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q11" value="0">
-      D) Machinery
-    </label>
-  </div>
-
-
-  <div class="card">
-    <div class="question">
-      12. Shareholder Value Added is related to:
-    </div>
-
-    <label class="option">
-      <input type="radio" name="q12" value="1">
-      A) Value created for shareholders
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q12" value="0">
-      B) Value of inventory
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q12" value="0">
-      C) Cost of production
-    </label>
-
-    <label class="option">
-      <input type="radio" name="q12" value="0">
-      D) Value of cash balance
-    </label>
-  </div>
-
-  </div>
-
-
-  <div class="card">
-    <button type="button"
-            class="subject-btn submit"
-            onclick="submitExam()">
-      Submit Test
-    </button>
-  </div>
-
-  </form>
-</div>
-
-
-<!-- SUCCESS MESSAGE -->
-
-<div class="card success hidden" id="successMessage">
-
-  <h2>✅ Test Successfully Submitted</h2>
-
-  <p>
-    Your test has been successfully submitted.
-  </p>
-
-  <p>
-    Thank you.
-  </p>
+<p><strong>Unit:</strong> 1–3</p>
 
 </div>
 
+<form id="examForm">
+
+<div id="questions"></div>
+
+<br>
+
+<button type="button" onclick="submitTest()">
+Submit CCE Test
+</button>
+
+</form>
+
 </div>
+
+
+<!-- SUCCESS -->
+
+<div class="success" id="success">
+
+<h2>✓ Test Successfully Submitted</h2>
+
+<p>Your CCE Test has been submitted successfully.</p>
+
+<p><strong>Your response has been recorded.</strong></p>
+
+<p>Thank you.</p>
+
+</div>
+
+
+<div class="footer">
+CCE Test | B.Com Second Year
+</div>
+
+</div>
+
+
+<!-- HIDDEN GOOGLE SHEET FORM -->
+
+<iframe name="hiddenFrame" style="display:none;"></iframe>
+
+<form
+id="googleForm"
+method="POST"
+target="hiddenFrame"
+style="display:none;">
+
+<input name="name" id="g_name">
+<input name="mobile" id="g_mobile">
+<input name="caste" id="g_caste">
+<input name="college" id="g_college">
+<input name="className" id="g_className">
+<input name="subject" id="g_subject">
+<input name="examDate" id="g_examDate">
+
+<input name="total" id="g_total">
+<input name="correct" id="g_correct">
+<input name="wrong" id="g_wrong">
+<input name="marks" id="g_marks">
+<input name="percentage" id="g_percentage">
+
+<input name="q1" id="g_q1">
+<input name="q2" id="g_q2">
+<input name="q3" id="g_q3">
+<input name="q4" id="g_q4">
+<input name="q5" id="g_q5">
+<input name="q6" id="g_q6">
+<input name="q7" id="g_q7">
+<input name="q8" id="g_q8">
+<input name="q9" id="g_q9">
+<input name="q10" id="g_q10">
+<input name="q11" id="g_q11">
+<input name="q12" id="g_q12">
+<input name="q13" id="g_q13">
+<input name="q14" id="g_q14">
+<input name="q15" id="g_q15">
+
+</form>
 
 
 <script>
 
-/*
-==================================================
-GOOGLE APPS SCRIPT WEB APP URL
-==================================================
-*/
+/* GOOGLE APPS SCRIPT URL */
 
 const SCRIPT_URL =
-"https://script.google.com/macros/s/AKfycbznXL64Nq9bH4HF6y0Xu9BpmOIw8mcqhj2-N0A8ImR1rL5AI7tnK55IoCeM270c1TF-7A/exec";
+"https://script.google.com/macros/s/AKfycbxEwOR-h62Plo8TJLX2wOM3jIkxoMywToMIHxVErOCekV1ji84lwbuZUIeqCkhJobwu/exec";
 
 
+/* QUESTIONS */
+
+const businessEconomics = [
+
+{
+q:"What is the main subject matter of Business Economics?",
+a:[
+"Economic principles applied to business decisions",
+"History of politics",
+"Study of accounting only",
+"Study of taxation only"
+],
+correct:0
+},
+
+{
+q:"According to the law of demand, when price increases, demand generally:",
+a:[
+"Increases",
+"Decreases",
+"Remains constant",
+"Becomes zero"
+],
+correct:1
+},
+
+{
+q:"Market equilibrium occurs when:",
+a:[
+"Demand is greater than supply",
+"Supply is greater than demand",
+"Demand equals supply",
+"Price is fixed by government"
+],
+correct:2
+},
+
+{
+q:"Which method is used to measure price elasticity of demand?",
+a:[
+"Percentage Method",
+"Profit Method",
+"Cost Method",
+"Production Method"
+],
+correct:0
+},
+
+{
+q:"Elasticity of supply measures the responsiveness of supply to a change in:",
+a:[
+"Income",
+"Price",
+"Population",
+"Utility"
+],
+correct:1
+},
+
+{
+q:"Cardinal utility theory measures utility in terms of:",
+a:[
+"Numbers",
+"Curves only",
+"Prices only",
+"Income only"
+],
+correct:0
+},
+
+{
+q:"An indifference curve shows combinations of two goods that provide:",
+a:[
+"Different satisfaction",
+"Equal satisfaction",
+"Zero satisfaction",
+"Equal income"
+],
+correct:1
+},
+
+{
+q:"ICC stands for:",
+a:[
+"Income Consumption Curve",
+"Income Cost Curve",
+"Individual Consumption Cost",
+"Internal Consumption Curve"
+],
+correct:0
+},
+
+{
+q:"Engel Curve shows the relationship between income and:",
+a:[
+"Consumption of a good",
+"Production",
+"Cost",
+"Supply"
+],
+correct:0
+},
+
+{
+q:"The substitution effect occurs due to a change in the:",
+a:[
+"Relative price of goods",
+"Population",
+"Production technology",
+"Size of the market"
+],
+correct:0
+},
+
+{
+q:"A production function shows the relationship between:",
+a:[
+"Inputs and output",
+"Price and demand",
+"Income and consumption",
+"Cost and profit only"
+],
+correct:0
+},
+
+{
+q:"TP stands for:",
+a:[
+"Total Product",
+"Total Price",
+"Total Profit",
+"Total Production Cost"
+],
+correct:0
+},
+
+{
+q:"MP stands for:",
+a:[
+"Marginal Product",
+"Market Price",
+"Maximum Product",
+"Marginal Price"
+],
+correct:0
+},
+
+{
+q:"LAC stands for:",
+a:[
+"Long-run Average Cost",
+"Labour Average Cost",
+"Long Average Capital",
+"Long-run Actual Cost"
+],
+correct:0
+},
+
+{
+q:"Economies of scale are related to:",
+a:[
+"Returns to scale",
+"Consumer utility",
+"Demand elasticity",
+"Market equilibrium"
+],
+correct:0
+}
+
+];
+
+
+const corporateAccounting = [
+
+{
+q:"IPO stands for:",
+a:[
+"Initial Public Offering",
+"Internal Public Offering",
+"Indian Public Organisation",
+"Initial Private Organisation"
+],
+correct:0
+},
+
+{
+q:"Bonus shares are issued to:",
+a:[
+"Existing shareholders",
+"Creditors only",
+"Employees only",
+"Government only"
+],
+correct:0
+},
+
+{
+q:"Buy-back of shares means:",
+a:[
+"Company purchases its own shares",
+"Company purchases another company's shares",
+"Shareholders purchase debentures",
+"Company issues bonus shares"
+],
+correct:0
+},
+
+{
+q:"Redemption of preference shares means:",
+a:[
+"Repayment of preference share capital",
+"Issue of ordinary shares",
+"Sale of fixed assets",
+"Payment of wages"
+],
+correct:0
+},
+
+{
+q:"CSR stands for:",
+a:[
+"Corporate Social Responsibility",
+"Company Share Return",
+"Corporate Sales Report",
+"Company Social Revenue"
+],
+correct:0
+},
+
+{
+q:"Which of the following is a financial statement of a company?",
+a:[
+"Balance Sheet",
+"Purchase Order",
+"Cash Memo",
+"Attendance Register"
+],
+correct:0
+},
+
+{
+q:"A Profit and Loss Statement shows:",
+a:[
+"Profit or loss of a company",
+"Only assets",
+"Only liabilities",
+"Only share capital"
+],
+correct:0
+},
+
+{
+q:"A Balance Sheet shows the:",
+a:[
+"Financial position of a company",
+"Daily sales only",
+"Daily purchases only",
+"Production quantity only"
+],
+correct:0
+},
+
+{
+q:"EPS stands for:",
+a:[
+"Earnings Per Share",
+"Equity Per Share",
+"Earnings Profit Statement",
+"Equity Profit Share"
+],
+correct:0
+},
+
+{
+q:"AS-20 is related to:",
+a:[
+"Earnings Per Share",
+"Cash Flow Statement",
+"Inventory",
+"Depreciation"
+],
+correct:0
+},
+
+{
+q:"Goodwill is classified as a/an:",
+a:[
+"Intangible Asset",
+"Current Liability",
+"Tangible Asset",
+"Current Asset"
+],
+correct:0
+},
+
+{
+q:"Valuation of goodwill is a part of valuation of:",
+a:[
+"Intangible Assets",
+"Current Liabilities",
+"Cash Balance",
+"Inventory only"
+],
+correct:0
+},
+
+{
+q:"EVA stands for:",
+a:[
+"Economic Value Added",
+"Equity Value Account",
+"Economic Valuation Account",
+"Enterprise Value Analysis"
+],
+correct:0
+},
+
+{
+q:"Market Value Added is related to:",
+a:[
+"Value created in the market",
+"Cost of raw materials",
+"Cash purchases",
+"Salary expenses"
+],
+correct:0
+},
+
+{
+q:"Shareholder Value Added focuses on value created for:",
+a:[
+"Shareholders",
+"Employees only",
+"Creditors only",
+"Government only"
+],
+correct:0
+}
+
+];
+
+
+let selectedQuestions = [];
 let selectedSubject = "";
 
 
-/*
-SHOW SUBJECTS
-*/
+/* START TEST */
 
-function showSubjects(){
+function startTest(){
 
-  const name =
-    document.getElementById("studentName")
-    .value.trim();
-
-  const mobile =
-    document.getElementById("mobile")
-    .value.trim();
+const name = document.getElementById("name").value.trim();
+const mobile = document.getElementById("mobile").value.trim();
+const caste = document.getElementById("caste").value;
+const college = document.getElementById("college").value.trim();
+const className = document.getElementById("className").value.trim();
+const subject = document.getElementById("subject").value;
+const examDate = document.getElementById("examDate").value;
 
 
-  if(name === ""){
+if(
+!name ||
+!mobile ||
+!caste ||
+!college ||
+!className ||
+!subject ||
+!examDate
+){
 
-    alert("Please enter your name.");
-    return;
-
-  }
-
-
-  if(!/^[0-9]{10}$/.test(mobile)){
-
-    alert("Please enter a valid 10 digit mobile number.");
-    return;
-
-  }
-
-
-  document
-    .getElementById("studentDetails")
-    .classList.add("hidden");
-
-
-  document
-    .getElementById("subjectSelection")
-    .classList.remove("hidden");
+alert("कृपया सभी जानकारी भरें।");
+return;
 
 }
 
 
-/*
-START SELECTED SUBJECT
-*/
+if(!/^[0-9]{10}$/.test(mobile)){
 
-function startExam(subject){
-
-  selectedSubject = subject;
-
-
-  document
-    .getElementById("subjectSelection")
-    .classList.add("hidden");
-
-
-  document
-    .getElementById("examSection")
-    .classList.remove("hidden");
-
-
-  document
-    .getElementById("subjectTitle")
-    .innerText = subject;
-
-
-  if(subject === "Business Economics"){
-
-    document
-      .getElementById("economicsQuestions")
-      .classList.remove("hidden");
-
-    document
-      .getElementById("accountingQuestions")
-      .classList.add("hidden");
-
-  }
-
-
-  if(subject === "Corporate Accounting"){
-
-    document
-      .getElementById("economicsQuestions")
-      .classList.add("hidden");
-
-    document
-      .getElementById("accountingQuestions")
-      .classList.remove("hidden");
-
-  }
-
-
-  window.scrollTo(0,0);
+alert("कृपया सही 10 अंकों का Mobile Number दर्ज करें।");
+return;
 
 }
 
 
-/*
-SUBMIT EXAM
-*/
+selectedSubject = subject;
 
-function submitExam(){
+if(subject === "Business Economics"){
 
-  const total = 12;
+selectedQuestions = businessEconomics;
 
-  let correct = 0;
+}
+else{
 
-  let wrong = 0;
-
-  let questionResults = [];
-
-
-  /*
-  CHECK EACH QUESTION
-  */
-
-  for(let i=1; i<=total; i++){
-
-    const selected =
-      document.querySelector(
-        'input[name="q'+i+'"]:checked'
-      );
-
-
-    if(!selected){
-
-      alert(
-        "Please answer Question " +
-        i +
-        " before submitting the test."
-      );
-
-      return;
-
-    }
-
-
-    if(selected.value === "1"){
-
-      correct++;
-
-      questionResults.push("Q"+i+": Correct");
-
-    }else{
-
-      wrong++;
-
-      questionResults.push("Q"+i+": Wrong");
-
-    }
-
-  }
-
-
-  const marks = correct * 2;
-
-  const percentage =
-    ((marks / 24) * 100).toFixed(2);
-
-
-  /*
-  STUDENT INFORMATION
-  */
-
-  const name =
-    document.getElementById("studentName")
-    .value.trim();
-
-  const mobile =
-    document.getElementById("mobile")
-    .value.trim();
-
-
-  /*
-  SEND DATA TO GOOGLE SHEET
-  */
-
-  sendToGoogleSheet({
-
-    name: name,
-
-    mobile: mobile,
-
-    subject: selectedSubject,
-
-    total: total,
-
-    correct: correct,
-
-    wrong: wrong,
-
-    marks: marks,
-
-    percentage: percentage,
-
-    q1: questionResults[0],
-
-    q2: questionResults[1],
-
-    q3: questionResults[2],
-
-    q4: questionResults[3],
-
-    q5: questionResults[4],
-
-    q6: questionResults[5],
-
-    q7: questionResults[6],
-
-    q8: questionResults[7],
-
-    q9: questionResults[8],
-
-    q10: questionResults[9],
-
-    q11: questionResults[10],
-
-    q12: questionResults[11]
-
-  });
-
-
-  /*
-  HIDE EXAM
-  */
-
-  document
-    .getElementById("examSection")
-    .classList.add("hidden");
-
-
-  /*
-  SHOW ONLY SUBMISSION MESSAGE
-  */
-
-  document
-    .getElementById("successMessage")
-    .classList.remove("hidden");
-
-
-  window.scrollTo(0,0);
+selectedQuestions = corporateAccounting;
 
 }
 
 
-/*
-SEND DATA TO GOOGLE APPS SCRIPT
+document.getElementById("registration").classList.add("hidden");
 
-Uses hidden HTML form so GitHub Pages
-does not need CORS permission.
-*/
+document.getElementById("exam").classList.remove("hidden");
 
-function sendToGoogleSheet(data){
-
-  const form =
-    document.createElement("form");
-
-  form.method = "POST";
-
-  form.action = SCRIPT_URL;
-
-  form.target = "sheetFrame";
+document.getElementById("subjectTitle").innerText =
+subject + " | B.Com Second Year";
 
 
-  for(const key in data){
+showQuestions();
 
-    const input =
-      document.createElement("input");
+window.scrollTo(0,0);
 
-    input.type = "hidden";
-
-    input.name = key;
-
-    input.value = data[key];
-
-    form.appendChild(input);
-
-  }
+}
 
 
-  document.body.appendChild(form);
+/* SHOW QUESTIONS */
 
-  form.submit();
+function showQuestions(){
 
-  form.remove();
+const box = document.getElementById("questions");
+
+box.innerHTML = "";
+
+selectedQuestions.forEach((item,index)=>{
+
+let html = `
+<div class="question">
+
+<div class="question-title">
+Q${index+1}. ${item.q}
+<br>
+<span style="color:#2563eb;">(2 Marks)</span>
+</div>
+`;
+
+item.a.forEach((option,optIndex)=>{
+
+html += `
+
+<label class="option">
+
+<input
+type="radio"
+name="q${index+1}"
+value="${optIndex}"
+>
+
+${String.fromCharCode(65+optIndex)}) ${option}
+
+</label>
+
+`;
+
+});
+
+html += `</div>`;
+
+box.innerHTML += html;
+
+});
+
+}
+
+
+/* SUBMIT TEST */
+
+function submitTest(){
+
+let unanswered = [];
+
+for(let i=0;i<15;i++){
+
+let selected =
+document.querySelector(
+`input[name="q${i+1}"]:checked`
+);
+
+if(!selected){
+
+unanswered.push(i+1);
+
+}
+
+}
+
+
+if(unanswered.length > 0){
+
+alert(
+"कृपया सभी प्रश्नों के उत्तर दें।\n\nछूटे हुए प्रश्न: " +
+unanswered.join(", ")
+);
+
+return;
+
+}
+
+
+let correct = 0;
+let answerStatus = [];
+
+
+selectedQuestions.forEach((item,index)=>{
+
+let selected =
+document.querySelector(
+`input[name="q${index+1}"]:checked`
+);
+
+let selectedAnswer =
+parseInt(selected.value);
+
+if(selectedAnswer === item.correct){
+
+correct++;
+
+answerStatus.push("Correct");
+
+}
+else{
+
+answerStatus.push("Wrong");
+
+}
+
+});
+
+
+let wrong = 15 - correct;
+
+let marks = correct * 2;
+
+let percentage =
+((marks / 30) * 100).toFixed(2);
+
+
+/* STUDENT DATA */
+
+document.getElementById("g_name").value =
+document.getElementById("name").value;
+
+document.getElementById("g_mobile").value =
+document.getElementById("mobile").value;
+
+document.getElementById("g_caste").value =
+document.getElementById("caste").value;
+
+document.getElementById("g_college").value =
+document.getElementById("college").value;
+
+document.getElementById("g_className").value =
+document.getElementById("className").value;
+
+document.getElementById("g_subject").value =
+selectedSubject;
+
+document.getElementById("g_examDate").value =
+document.getElementById("examDate").value;
+
+
+/* RESULT DATA */
+
+document.getElementById("g_total").value = 15;
+
+document.getElementById("g_correct").value = correct;
+
+document.getElementById("g_wrong").value = wrong;
+
+document.getElementById("g_marks").value = marks;
+
+document.getElementById("g_percentage").value =
+percentage;
+
+
+/* Q1-Q15 */
+
+for(let i=0;i<15;i++){
+
+document.getElementById("g_q"+(i+1)).value =
+answerStatus[i];
+
+}
+
+
+/* SEND TO GOOGLE SHEET */
+
+document.getElementById("googleForm").action =
+SCRIPT_URL;
+
+document.getElementById("googleForm").submit();
+
+
+/* HIDE EXAM */
+
+document.getElementById("exam").classList.add("hidden");
+
+
+/* SHOW SUCCESS ONLY */
+
+document.getElementById("success").style.display =
+"block";
+
+window.scrollTo(0,0);
 
 }
 
 </script>
-
-
-<!-- Hidden frame for Google Apps Script -->
-
-<iframe
-  name="sheetFrame"
-  id="sheetFrame"
-  style="display:none;">
-</iframe>
 
 </body>
 </html>
